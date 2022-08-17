@@ -1,5 +1,4 @@
 # Différents mondes
-
 * Information actif est plus important.
 * 2 fins :
   - Tenue de dossiers opérationnels
@@ -26,4 +25,4 @@
   - Données brutes en informations exploitables
   - Délais réalistes, surtout si nettoyages
 - Protège les informations
-  -Quand contient
+  - Quand contient
