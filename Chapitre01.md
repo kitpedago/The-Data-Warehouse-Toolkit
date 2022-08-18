@@ -56,7 +56,9 @@
 Largement accepté comme technique préférée pour présenter des données analytiques car 2 exigences simultanées :
 1. Fournir des données compréhensibles par l'utilisateur métier
 1. Fournir des preformances de requêtes rapides
+
 > Technique de longue date, qui permet de simplifier les bases de données.
+
 La capacité à visualiser quelque chose d'aussi abstrait qu'un ensemble de données de façon concrète et tangible est le secret de la compréhensibilité.
 Même si les modèles dimentionnels sont instanciés dans SGBDR, sont très différents des modèles 3NF (3 formes normales). 3NF divisent les données en entités discrètes, devenant des tables relationnelles. 1 commamnde d'un produit = 1 ligne dans une table = diagrame complexe en toile dareignée de centaines de tables normalisés.
 ERD (diagramme entité-relation) sont des dessins qui schématisent les relations entre les tables.
