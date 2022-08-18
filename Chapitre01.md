@@ -118,3 +118,6 @@ Quand les données sont chargés dans cube OLAP :
 * fournissent également des fonctions plus robustes et analytiques qui dépassent celles disponibles avec SQL
 
 Inconvénient : performance de charge pour ces fonctionnalités, en particulier avec de grands ensembles de données
+
+Dans cet ouvrage : nos recommandations s'appliquent indépendamment de la plate-forme de base de données, relationnelles ou multidimensionnelle.
+
