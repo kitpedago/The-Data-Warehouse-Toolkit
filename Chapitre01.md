@@ -98,3 +98,23 @@ du modèle, qui ressemble à une carte du métro parisien [au système d'autorou
 
 ## Schéma en étoile vs cubes OLAP
 
+Modèle dimensionnels :
+
+* dans SGBRD = schéma en étoile
+* dans environnements de base de données multidimensionnelles = OLAP (cubes de traitement analytique en ligne)
+
+![Schéma en étoile vs cubes OLAP](https://2.bp.blogspot.com/-WpSy-JrsL0k/XGhI8r_svwI/AAAAAAAAHAA/WH9XVgXIPqA-iYgcMU_5DVgViuWWpdT5wCLcBGAs/s1600/star_cube.jpg)
+
+Si votre environnement DW/BI exploitent schéma en étoile et cube OLAP :
+
+* dimensions reconnaissables
+* mise en oeuvre physique différente
+
+Quand les données sont chargés dans cube OLAP :
+
+* stockées et indexées à l’aide de formats et de techniques conçus pour les données dimensionnelles
+* offrent des performances de requête supérieures grâce aux précalculs, aux stratégies d'indexation et d'autres optimisations
+* forages vers le bas ou vers le haut en ajoutant ou en supprimant des attributs de l'analyses avec d'excellentes performances sans émettre de nouvelles requêtes
+* fournissent également des fonctions plus robustes et analytiques qui dépassent celles disponibles avec SQL
+
+Inconvénient : performance de charge pour ces fonctionnalités, en particulier avec de grands ensembles de données
