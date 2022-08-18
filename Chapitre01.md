@@ -120,4 +120,20 @@ Quand les données sont chargés dans cube OLAP :
 Inconvénient : performance de charge pour ces fonctionnalités, en particulier avec de grands ensembles de données
 
 Dans cet ouvrage : nos recommandations s'appliquent indépendamment de la plate-forme de base de données, relationnelles ou multidimensionnelle.
+Bien que les capacités de la technologie OLAP s'améliorent continuellement, nous recommandons généralement que les informations détaillées et atomiques soient chargées dans un schéma en étoile ; les cubes OLAP optionnels sont ensuite alimentés à partir du schéma en étoile. C'est pourquoi la plupart des techniques de modélisation dimensionnelle présentées dans ce livre sont formulées en termes de schéma en étoile relationnel.
+
+### OLAP Deployment Considerations
+
+* Un schéma en étoile hébergée dans une base de données relationnelle est une bonne fondation physique pour contruire un cube OLAP, et est généralement considéré comme une base stable pour la souvegarde et la restauration.
+* Les cubes OLAP sont connus pour leur avantage en terme de performance. Mais c'est moins vrai aujourd'hui avec les avancées du matériel informatique, avec les appliances et les bases in-memory et les base en colonne.
+* Les structures de données des cubes OLAP sont plus variables d'un fournisseur à l'autre que les SGBD relationnels, de sorte que les détails du déploiement final dépendent souvent du fournisseur OLAP choisi. Il est généralement plus difficile de porter des applications de BI entre différents outils OLAP que de porter des applications de BI entre différentes bases de données relationnelles
+* Les cubes OLAP offrent généralement des options de sécurité plus sophistiquées que les SGBDR, par exemple en limitant l'accès aux données détaillées mais en offrant un accès plus ouvert aux données résumés
+* Les cubes OLAP offrent des capacités d'analyse beaucoup plus riches que les SGBDR, limitées par le SQL. Cela peut être la principale justifica tion de l'utilisation d'un produit OLAP
+* Les cubes OLAP supportent les dimension à évolutions lentes de type 2, mais les cubes doivent souvent être retraiter partiellement ou totalement chaque fois que les données sont écrasées en utilisant des techniques alternatives de dimension à évolutions lentes.
+* Les cubes OLAP supportent les tables de faits de transactions et d'instantanés périodiques, mais pas les tables de faits d'instantanés accumulatifs en raison des limitations sur l'écrasement des données décrites dans le point précédent
+* Les cubes OLAP prennent généralement en charge les hiérarchies complexes de profondeur indéterminée, comme les organigrammes ou les nomenclatures, en utilisant une syntaxe de requête native supérieure aux approches requises pour les SGBDR
+* Les cubes OLAP peuvent imposer des contraintes sur la structure des clés de dimension qui mettent en œuvre des hiérarchies de type drill-down par rapport aux bases de données relationnelles
+* Certains produits OLAP ne permettent pas les rôles dimensionnels ou les alias, ce qui nécessite de définir des dimensions physiques distinctes
+
+## Table de faits pour les mesures
 
