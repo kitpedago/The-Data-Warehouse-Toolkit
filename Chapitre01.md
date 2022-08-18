@@ -52,3 +52,8 @@
   - Mettre à jour régulièrement le système DW/BI
   - Maintenir la confiance des utilisateurs professionnels
   - Gardez les utilisateurs professionnels (...) et la direction informatique satisfaits
+# Introduction à la modélisation dimensionnelle 
+Largement accepté comme technique préférée pour présenter des données analytiques car 2 exigences simultanées :
+1. Fournir des données compréhensibles par l'utilisateur métier
+1. Fournir des preformances de requêtes rapides
+> Technique de longue date, qui permet de simplifier les bases de données.
