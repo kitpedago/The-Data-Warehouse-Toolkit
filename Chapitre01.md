@@ -137,3 +137,13 @@ Bien que les capacités de la technologie OLAP s'améliorent continuellement, no
 
 ## Table de faits pour les mesures
 
+Une table de faits stocke les mesures de performance résultants des évènements des processus métier d'une organisation.
+
+* Stocker ces données de bas niveau dans un seul modèle dimentionel
+* Ne pas répliquer ces données à plusieurs endroits pour plusieurs fonctions organisationnelles dans l'entreprise
+* Permettre aux utilisateurs de plusieurs organisations d'accéder à un seul référentiel centralisé pour chaque ensemble de données de mesure.
+
+*Fait* = mesure d'affaire / mesure commerciale.
+Chaque ligne correspond à un événement de mesure.
+Les données de chaque ligne se situent à un niveau de détail spécifique, appelé le grain
+Fondamental : toutes les lignes de mesure d'un tableau de faits doivent être au même niveau de détail (évite doublons)
