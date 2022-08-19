@@ -149,3 +149,4 @@ Chaque ligne correspond à un événement de mesure.
 Les données de chaque ligne se situent à un niveau de détail spécifique, appelé le grain
 Fondamental : toutes les lignes de mesure d'un tableau de faits doivent être au même niveau de détail (évite doublons).
 Les faits les plus utiles sont Nuémriques et Additifs.
+L'additivité est crutiale.
