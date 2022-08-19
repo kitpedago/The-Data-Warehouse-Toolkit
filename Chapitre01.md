@@ -144,6 +144,7 @@ Une table de faits stocke les mesures de performance résultants des évènement
 * Permettre aux utilisateurs de plusieurs organisations d'accéder à un seul référentiel centralisé pour chaque ensemble de données de mesure.
 
 *Fait* = mesure d'affaire / mesure commerciale.
+
 Chaque ligne correspond à un événement de mesure.
 Les données de chaque ligne se situent à un niveau de détail spécifique, appelé le grain
 Fondamental : toutes les lignes de mesure d'un tableau de faits doivent être au même niveau de détail (évite doublons)
